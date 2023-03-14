@@ -26,26 +26,24 @@ def scrape_personal_info():
     
     # Define the HTML template for the personal information and image
     html_template = '''
-    <html>
+        <!DOCTYPE html>
+        <html>
         <head>
-            <title>Hello Lionel Messi</title>
+            <meta charset="UTF-8">
+            <title>Hi Leo</title>
         </head>
         <body>
-            <div class="personal-info">
-                {personal_info}
-            </div>
-            <div class="image">
-                <img src="image.jpg">
+            <h1>Some of Leo's Info: </h1>
+            <div>
+                {}
             </div>
         </body>
-    </html>
+        </html>
     '''
     
     # Format the HTML template with the personal information
-    formatted_html = html_template.format(personal_info = personal_info)
-    
     # Save the formatted HTML to a file
     with open('index.html', 'w', encoding = 'utf-8') as f:
-        f.write(formatted_html)
+        f.write(html_template.format(personal_info))
 
 scrape_personal_info()
