@@ -11,27 +11,27 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       
       - name: Setup Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v4
         with:
           python-version: 3.x
       
       - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install beautifulsoup4 requests
+          pip install beautifulsoup4 requests re
       
       - name: Run Scraper
         run: python scraper.py
       
       - name: Commit Changes
         run: |
-          git config --global user.email "you@example.com"
-          git config --global user.name "Your Name"
-          git add index.html image.jpg
-          git commit -m "Update personal info and image"
+          git config --global user.email "bar@securityjoes.com"
+          git config --global user.name "bmoyall"
+          git add .
+          git commit -m "Updated personal info and image"
       
       - name: Push Changes
         uses: ad-m/github-push-action@master
