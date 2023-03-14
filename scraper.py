@@ -4,7 +4,7 @@ import re
 
 def scrape_personal_info():
     # Define the URL to scrape
-    url = "https://en.wikipedia.org/wiki/Lionel_Messi"
+    url = "https://en.wikipedia.org/wiki/David_Beckham"
     
     # Send an HTTP request to the URL
     response = requests.get(url)
