@@ -28,7 +28,7 @@ def scrape_personal_info():
     html_template = '''
     <html>
         <head>
-            <title>Lionel Messi</title>
+            <title>Hello Lionel Messi</title>
         </head>
         <body>
             <div class="personal-info">
@@ -45,7 +45,5 @@ def scrape_personal_info():
     formatted_html = html_template.format(personal_info = personal_info)
     
     # Save the formatted HTML to a file
-    with open('index.html', 'w', encoding='utf-8') as f:
+    with open('index.html', 'w', encoding = 'utf-8') as f:
         f.write(formatted_html)
-        
-scrape_personal_info()
