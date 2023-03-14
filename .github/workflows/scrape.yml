@@ -33,7 +33,7 @@ jobs:
           git config --global user.email "bar@securityjoes.com"
           git config --global user.name "bmoyall"
           git add .
-          git commit -m "Updated personal info and image"
+          git diff --exit-code || git commit -am "ci lint and test"
       
       - name: Push Changes
         uses: ad-m/github-push-action@master
