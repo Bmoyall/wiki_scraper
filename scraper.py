@@ -31,3 +31,5 @@ def scrape_personal_info():
     # Save the personal information to a HTML file
     with open('index.html', 'w') as f:
         f.write(str(personal_info))
+        
+scrape_personal_info()
