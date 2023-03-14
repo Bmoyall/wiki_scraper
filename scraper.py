@@ -47,5 +47,4 @@ def scrape_personal_info():
     # Save the formatted HTML to a file
     with open('index.html', 'w', encoding = 'utf-8') as f:
         f.write(formatted_html)
-        
-scrape_personal_info()
+
