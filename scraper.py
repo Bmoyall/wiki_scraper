@@ -36,6 +36,7 @@ def scrape_personal_info():
             <h1>Some of Leo's Info: </h1>
             <div>
                 {}
+                <img src="img.png" />
             </div>
         </body>
         </html>
