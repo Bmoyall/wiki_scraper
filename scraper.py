@@ -48,3 +48,4 @@ def scrape_personal_info():
     with open('index.html', 'w', encoding = 'utf-8') as f:
         f.write(formatted_html)
 
+scrape_personal_info()
