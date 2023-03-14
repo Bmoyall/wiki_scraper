@@ -34,8 +34,10 @@ def scrape_personal_info():
         </head>
         <body>
             <h1>Some of Leo's Info: </h1>
-            <div>
+            <div class = "personal_info">
                 {}
+            </div>
+            <div> 
                 <img src="image.jpg">
             </div>
         </body>
