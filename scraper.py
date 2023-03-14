@@ -16,7 +16,7 @@ def scrape_personal_info():
     personal_info = soup.find('table', {'class': 'infobox vcard'})
     
     # Extract the image URL
-    image_url = soup.find('img', {'alt': 'Lionel-Messi-Argentina-2022-FIFA-World-Cup (cropped).jpg'})['src']
+    image_url = soup.find('img', {'alt': 'Lionel Messi'})['src']
     image_url = re.sub(r'//', 'https://', image_url)
     
     # Save the image
